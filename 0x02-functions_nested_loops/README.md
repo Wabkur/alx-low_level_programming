@@ -1,1 +1,1 @@
-function that checks for lowercase character
+ program that prints _putchar, followed by a new line
