@@ -1,1 +1,1 @@
-function that prints the last digit of a number
+program that prints _putchar, followed by a new line
