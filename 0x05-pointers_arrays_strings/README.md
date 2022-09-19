@@ -1,1 +1,1 @@
-function that prints a string, followed by a new line, to stdout
+function that reverses a string
