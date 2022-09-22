@@ -1,23 +1,14 @@
-// Program to calculate the sum of array elements by passing to a function 
-
 #include <stdio.h>
-float calculateSum(float num[]);
+void display(int age1, int age2) {
+  printf("%d\n", age1);
+  printf("%d\n", age2);
+}
 
 int main() {
-  float result, num[] = {23.4, 55, 22.6, 3, 40.5, 18};
+  int ageArray[] = {2, 8, 4, 12};
 
-  // num array is passed to calculateSum()
-  result = calculateSum(num); 
-  printf("Result = %.2f", result);
+  // pass second and third elements to display()
+  display(ageArray[1], ageArray[2]); 
   return 0;
 }
 
-float calculateSum(float num[]) {
-  float sum = 0.0;
-
-  for (int i = 0; i < 6; ++i) {
-    sum += num[i];
-  }
-
-  return sum;
-}
