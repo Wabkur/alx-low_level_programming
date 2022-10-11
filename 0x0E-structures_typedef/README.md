@@ -1,1 +1,1 @@
-function that prints a struct dog
+function that creates a new dog
