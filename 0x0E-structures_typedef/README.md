@@ -1,1 +1,1 @@
-new type struct dog with the following elements
+ function that initialize a variable of type struct dog
