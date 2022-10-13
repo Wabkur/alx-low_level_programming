@@ -1,1 +1,1 @@
-function that searches for an integer
+function that prints a name
