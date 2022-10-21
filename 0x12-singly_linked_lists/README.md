@@ -1,1 +1,1 @@
-64-bit program in assembly that prints Hello, Holberton, followed by a new line
+function that returns the number of elements in a linked list_t list
