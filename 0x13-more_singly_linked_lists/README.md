@@ -1,1 +1,1 @@
-unction that adds a new node at the end of a listint_t list
+function that frees a listint_t list
