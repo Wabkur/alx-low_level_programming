@@ -1,1 +1,1 @@
-function that creates a file
+function that appends text at the end of a file
