@@ -1,1 +1,1 @@
-executable
+first useful Makefile
