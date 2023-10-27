@@ -15,15 +15,15 @@ unsigned int binary_to_unit(const char *b)
 	num = 0;
 	if (!b)
 		return (0);
-	for (a = 0; b[a] != '\0'; a++)
+	for (w = 0; b[w] != '\0'; w++)
 	{
-		if (b[a] != '0' && b[a] != '1')
+		if (b[w] != '0' && b[w] != '1')
 			return (0);
 	}
-	for (a = 0; b[a] != '\0', a++)
+	for (w = 0; b[w] != '\0', w++)
 	{
 		num <<= 1;
-		if (b[a] == '1')
+		if (b[w] == '1')
 			num += 1;
 	}
 	return (num);
