@@ -7,7 +7,7 @@
  *
  * Return: unsigned int with decimal value of binary number, or 0 if error 
  */ 
-unsigned int binary_to_unit(const char *b);
+unsigned int binary_to_unit(const char *b)
 {
 	int w;
 	unsigned int num;
