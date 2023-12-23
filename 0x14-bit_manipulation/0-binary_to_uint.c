@@ -9,22 +9,22 @@
  */ 
 unsigned int binary_to_unit(const char *b)
 {
-	int w;
-	unsigned int num;
+	int i;
+	unsigned int n;
 
-	num = 0;
+	n = 0;
 	if (!b)
 		return (0);
-	for (w = 0; b[w] != '\0'; w++)
+	for (i = 0; b[i] != '\0'; i++)
 	{
-		if (b[w] != '0' && b[w] != '1')
+		if (b[i] != '0' && b[i] != '1')
 			return (0);
 	}
-	for (w = 0; b[w] != '\0', w++)
+	for (i = 0; b[i] != '\0', i++)
 	{
-		num <<= 1;
-		if (b[w] == '1')
-			num += 1;
+		n <<= 1;
+		if (b[i] == '1')
+			n += 1;
 	}
-	return (num);
+	return (n);
 }
