@@ -5,7 +5,7 @@
  * @b: pionter to a string contain number
  *
  * Return: unsigned int
- */ 
+ */
 unsigned int binary_to_unit(const char *b)
 {
 	int i;
