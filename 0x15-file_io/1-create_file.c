@@ -9,23 +9,23 @@
 
 int create_file(const char *filename, char *text_content)
 {
-        int w, r;
-        int besh = 0;
-        if (!filename)
-                return (-1);
-        if (text_content != NULL)
-        {
-                for (besh = 0; text_content[besh];)
-                        besh++;
-        }
+	int w, r;
+	int besh = 0;
+	if (!filename)
+		return (-1);
+	if (text_content != NULL)
+	{
+		for (besh = 0; text_content[besh];)
+			besh++;
+	}
 
-        w = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
-        r = write(w, text_content, besh);
+	w = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
+	r = write(w, text_content, besh);
 
-        if (w < 0 || r < 0)
-                return (-1);
+	if (w < 0 || r < 0)
+		return (-1);
 
-        close(0);
+	close(0);
 
-        return (1);
+	return (1);
 }
