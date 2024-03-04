@@ -15,11 +15,11 @@ int create_file(const char *filename, char *text_content)
                 return (-1);
         if (text_content != NULL)
         {
-                for (besh = 0; text_content[len];)
+                for (besh = 0; text_content[besh];)
                         len++;
         }
 
-        w = open(filename, 0_CREAT | 0_RDWR | 0_TRUNC, 0600);
+        w = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
         r = write(w, text_content, besh);
 
         if (w < 0 || r < 0)
