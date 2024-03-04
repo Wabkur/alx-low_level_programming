@@ -1,37 +1,37 @@
 #include "main.h"
-#include <stdlib.h>
+
 /**
- * read_textfile - Read a text file and print it to the stdout
- * @filename: A pointer to the name of the file
- * @letters: Number of letters to read and print
+ * read_textfile - reads a text file and prints it to the stdout
+ * @filename: pointer to the name of the file
+ * @letters: num of letters to read and print
  *
- * return: if function fail or !filename
+ * Return: the number of letters printed, or 0 if it failed
  */
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int w, j, r;
-	char *besh;
+	ssize_t m, w, t;
+	char *buf;
 
-	if (!filename)
+	if (filename == NULL)
 		return (0);
 
-	besh malloc(sizeof(char) * letters);
-	if (!besh)
+	buf = malloc(sizeof(char) * letters);
+	if (buf == NULL)
 		return (0);
 
-	w = open(filename, 0_RDONLY);
-	j = read(w, besh, letters);
-	r = write(STDOUT_FILENO, besh, j);
+	m = open(filename, O_RDONLY);
+	w = read(m, buf, letters);
+	t = write(STDOUT_FILENO, buf, w);
 
-	if(w < 0 || j < 0 || r < 0 || r != j)
+	if (m == -1 || w == -1 || t == -1 || t != r)
 	{
-		free(besh);
+		free(buf);
 		return (0);
 	}
 
-	free(besh);
-	close(0);
+	free(buf);
+	close(m);
 
 	return (w);
 }
