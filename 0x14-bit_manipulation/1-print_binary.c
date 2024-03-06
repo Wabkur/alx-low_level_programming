@@ -1,12 +1,11 @@
 #include "main.h"
 
 /**
- * Print_binary - print the binary representation of a number
- * @n: unsigned long int.
+ * Print_binary - .
+ * @n: .
  *
- * Return: nothing
+ * Return: .
  */
-
 void print_binary(unsigned long int n)
 {
 	if (n > 1)
