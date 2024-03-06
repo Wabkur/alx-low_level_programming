@@ -1,29 +1,24 @@
 #include "main.h"
 
 /**
- * binary_to_unit - function converts a binary number to an unsigned int.
- * @b: pionter to a string contain number
+ * binary_to_unit - .
+ * @b: .
  *
- * Return: unsigned int
+ * Return: convert no.
  */
 unsigned int binary_to_unit(const char *b)
 {
 	int i;
-	unsigned int n;
+	unsigned int w;
 
-	n = 0;
+	w = 0;
 	if (!b)
 		return (0);
-	for (i = 0; b[i] != '\0'; i++)
+	for (i = 0; b[i]; i++)
 	{
 		if (b[i] != '0' && b[i] != '1')
 			return (0);
+		w = 2 * w + (b[i] - '0');
 	}
-	for (i = 0; b[i] != '\0'; i++)
-	{
-		n <<= 1;
-		if (b[i] == '1')
-			n += 1;
-	}
-	return (n);
+	return (w);
 }
