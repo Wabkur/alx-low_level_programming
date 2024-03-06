@@ -10,18 +10,18 @@
  * Return: if function fails - NULL
  */
 
-char *string_nconcat(char *b1, char *b2, unsigned int w)
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *concat;
-	unsigned int len = w, index;
+	unsigned int len = n, index;
 
-	if (b1 == NULL)
-		b1 = "";
+	if (s1 == NULL)
+		s1 = "";
 
-	if (b2 == NULL)
-		b2 = "";
+	if (s2 == NULL)
+		s2 = "";
 
-	for (index = 0; b1[index]; index++)
+	for (index = 0; s1[index]; index++)
 		len++;
 
 	concat = malloc(sizeof(char) * (len + 1));
@@ -31,11 +31,11 @@ char *string_nconcat(char *b1, char *b2, unsigned int w)
 
 	len = 0;
 
-	for (index = 0; b1[index]; index++)
-		concat[len++] = b1[index];
+	for (index = 0; s1[index]; index++)
+		concat[len++] = s1[index];
 
-	for (index = 0; b2[index] && index < w; index++)
-		concat[len++] = b2[index];
+	for (index = 0; s2[index] && index < n; index++)
+		concat[len++] = s2[index];
 
 	concat[len] = '\0';
 
