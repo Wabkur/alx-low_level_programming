@@ -19,7 +19,7 @@ unsigned int binary_to_unit(const char *b)
 		if (b[i] != '0' && b[i] != '1')
 			return (0);
 	}
-	for (i = 0; b[i] != '\0', i++)
+	for (i = 0; b[i] != '\0'; i++)
 	{
 		n <<= 1;
 		if (b[i] == '1')
