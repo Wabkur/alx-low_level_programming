@@ -7,11 +7,11 @@
  *
  * Return: Pointer memory
  */
-void *malloc_checked(unsigned int w)
+void *malloc_checked(unsigned int b)
 {
 	void *ptr;
 
-	ptr = malloc(w);
+	ptr = malloc(b);
 
 	if (ptr == NULL)
 		exit(98);
