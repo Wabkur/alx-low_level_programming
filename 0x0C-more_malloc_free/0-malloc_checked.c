@@ -9,7 +9,7 @@
  */
 void *malloc_checked(unsigned int w)
 {
-	void *ptr;
+	void *kur;
 
 	kur = malloc(w);
 
