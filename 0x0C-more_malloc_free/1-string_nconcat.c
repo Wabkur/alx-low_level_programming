@@ -2,10 +2,10 @@
 #include <stdlib.h>
 
 /**
- * string_nconcat - strings
+ * string_nconcat - concatenates two strings 
  * @1: pointer to the first string
  * @2: pointer to the second string
- * @n: number of byte
+ * @n: maximum number of bytes
  *
  * Return: if function fails - NULL
  */
